@@ -12,22 +12,52 @@
     >Show Quantity</Button>
     <Button onclick="
         cartQuantity = cartQuantity+1;
-        console.log(cartQuantity)"
+        if (cartQuantity>=10) {
+            console.log('The cart is full, dont update the quantity');
+            cartQuantity = cartQuantity-1;
+        } else {
+            console.log(cartQuantity);
+        }
+        "
     >Add to Cart</Button>
     <Button onclick="cartQuantity = cartQuantity+2;
-        console.log(cartQuantity)">+2</Button>
+    if (cartQuantity>10) {
+        console.log('The cart is full, dont update the quantity');
+        cartQuantity = cartQuantity-2;
+    } else {
+        console.log(cartQuantity);
+    }
+    ">+2</Button>
 
     <Button onclick="
-        cartQuantity = cartQuantity+3
-        console.log(cartQuantity)">+3</Button>
+        cartQuantity = cartQuantity+3;
+        if (cartQuantity>10) {
+            console.log('The cart is full, dont update the quantity');
+            cartQuantity = cartQuantity-3;
+        } else {
+            console.log(cartQuantity);
+        }
+        ">+3</Button>
 
     <Button onclick="
-        cartQuantity += 4;
-        console.log(cartQuantity)">+4</Button>
+        cartQuantity = cartQuantity+4;
+        if (cartQuantity>10) {
+            console.log('The cart is full, dont update the quantity');
+            cartQuantity = cartQuantity-4;
+        } else {
+            console.log(cartQuantity);
+        }
+        ">+4</Button>
 
     <Button onclick="
-        cartQuantity +=5;
-        console.log(cartQuantity)">+5</Button>
+        cartQuantity = cartQuantity+5;
+        if (cartQuantity>10) {
+            console.log('The cart is full, dont update the quantity');
+            cartQuantity = cartQuantity-5;
+        } else {
+            console.log(cartQuantity);
+        }
+        ">+5</Button>
 
     <Button onclick="
         cartQuantity --;
