@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product = {
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name);
+        product.name = 'cotton socks';
+        console.log(product.name)
+
+        product.newProperty = true;
+        console.log(product);
+
+        delete product.newProperty;
+        console.log(product);
+
+        //truy cập phần tử theo cách khác
+        product2 = {
+            name: 'shift',
+            ['delivery-time']: '1 day', // có thể bỏ dấu ngoặc vuông
+            rating: {
+                stars: 4.5,
+                count: 87,
+            },
+            fun: function functionObject() {
+                console.log('function inside object');  // chức năng bên trong object
+            } 
+        }
+        console.log(product2['name']);
+        console.log(product2['delivery-time'])
+        console.log(product2.rating.stars)
+        product2.fun();
+    </script>
+</body>
+</html>
